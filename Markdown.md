@@ -3,6 +3,8 @@ Markdown 미리보기 사이트
 - https://stackedit.io/
 - VS Code 확장: Markdown All in One
 
+---
+
 ## 📑 Markdown 기본 문법 정리
 
 # 제목 1
