@@ -6,7 +6,7 @@ ex) git subtree add --prefix=JavaConsoleBankPC https://github.com/likewhat9901/J
 git push
 혹은 git push origin HEAD:main --force
 ```
-- 추가할 repo가 여러개일 경우 반복한 후 push
+- 추가할 repo가 여러개일 경우 반복한 후 push  
 출처: https://backendcode.tistory.com/271
 
 ---
