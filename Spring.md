@@ -15,7 +15,6 @@ public class UserController {
 
 * **이유**: REST API 작성의 기본. `@RestController` + `@RequestMapping` 조합은 필수.
 
----
 
 ### 2. DTO (Data Transfer Object) 사용
 
