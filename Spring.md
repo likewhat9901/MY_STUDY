@@ -1,6 +1,6 @@
-# Spring 실무 필수 코드 모음
+## Spring 실무 필수 코드 모음
 
-## 1. Controller 기본 구조
+### 1. Controller 기본 구조
 ```java
 @RestController
 @RequestMapping("/api/users")
