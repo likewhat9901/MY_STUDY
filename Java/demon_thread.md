@@ -1,6 +1,6 @@
 ## Demon Thread 생성 및 활용
 ``` java
-  import java.util.concurrent.TimeUnit;
+import java.util.concurrent.TimeUnit;
 
 public class Main {
     public static void main(String[] args) {
