@@ -1,5 +1,5 @@
 ## Demon Thread 생성 및 활용
-''' java
+``` java
   import java.util.concurrent.TimeUnit;
 
 public class Main {
@@ -38,4 +38,4 @@ public class Main {
         System.out.println("메인 스레드 종료");
     }
 }
-'''
+```
