@@ -4,7 +4,7 @@
 # get your access token from https://supabase.com/dashboard/account/tokens
 set SUPABASE_ACCESS_TOKEN=your-access-token
 
-# List your organizations to get the organization ID
+# List your organizations to get the organization ID (없으면 만들어야 함)
 curl -H "Authorization: Bearer %SUPABASE_ACCESS_TOKEN%" https://api.supabase.com/v1/organizations
 
 # Create a new project (replace <org-id> with your organization ID)
