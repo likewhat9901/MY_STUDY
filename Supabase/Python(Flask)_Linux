@@ -1,0 +1,33 @@
+##accees token
+- (python-test) sbp_2db521e7acc90a7e2333247ff1618e4934aabd92
+# get your access token from https://supabase.com/dashboard/account/tokens
+export SUPABASE_ACCESS_TOKEN="your-access-token"
+
+# List your organizations to get the organization ID
+curl -H "Authorization: Bearer $SUPABASE_ACCESS_TOKEN" \
+  https://api.supabase.com/v1/organizations
+
+# Create a new project (replace <org-id> with your organization ID)
+curl -X POST https://api.supabase.com/v1/projects \
+  -H "Authorization: Bearer $SUPABASE_ACCESS_TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "organization_id": "<org-id>",
+    "name": "My Project",
+    "region": "us-east-1",
+    "db_pass": "<your-secure-password>"
+  }'
+
+-- Create the table
+create table instruments (
+  id bigint primary key generated always as identity,
+  name text not null
+);
+
+-- Insert some sample data into the table
+insert into instruments (name)
+values
+  ('violin'),
+  ('viola'),
+  ('cello');
+alter table instruments enable row level security;
